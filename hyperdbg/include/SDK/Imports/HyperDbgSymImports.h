@@ -20,9 +20,9 @@ extern "C" {
 
 __declspec(dllimport) VOID
     SymSetTextMessageCallback(PVOID Handler);
-__declspec(dllimport) UINT64
+/*__declspec(dllimport)*/ UINT64
     SymConvertNameToAddress(const char * FunctionOrVariableName, PBOOLEAN WasFound);
-__declspec(dllimport) UINT32
+/*__declspec(dllimport)*/ UINT32
     SymLoadFileSymbol(UINT64 BaseAddress, const char * PdbFileName, const char * CustomModuleName);
 __declspec(dllimport) UINT32
     SymUnloadAllSymbols();

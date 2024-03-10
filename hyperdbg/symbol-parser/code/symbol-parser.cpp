@@ -19,7 +19,7 @@ std::vector<PSYMBOL_LOADED_MODULE_DETAILS> g_LoadedModules;
 BOOLEAN                                    g_IsLoadedModulesInitialized = FALSE;
 BOOLEAN                                    g_AbortLoadingExecution      = FALSE;
 CHAR *                                     g_CurrentModuleName          = NULL;
-Callback                                   g_MessageHandler             = NULL;
+static Callback                            g_MessageHandler             = NULL;
 SymbolMapCallback                          g_SymbolMapForDisassembler   = NULL;
 
 /**
@@ -44,7 +44,7 @@ SymSetTextMessageCallback(PVOID handler)
  *
  * @param Fmt format string message
  */
-VOID
+static VOID
 ShowMessages(const char * Fmt, ...)
 {
     va_list ArgList;

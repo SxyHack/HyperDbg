@@ -16,6 +16,7 @@
 // Log Callbacks
 //
 
+inline
 BOOLEAN
 LogCallbackPrepareAndSendMessageToQueue(UINT32       OperationCode,
                                         BOOLEAN      IsImmediateMessage,
@@ -24,6 +25,7 @@ LogCallbackPrepareAndSendMessageToQueue(UINT32       OperationCode,
                                         const char * Fmt,
                                         ...);
 
+inline
 BOOLEAN
 LogCallbackSendMessageToQueue(UINT32  OperationCode,
                               BOOLEAN IsImmediateMessage,
@@ -31,9 +33,11 @@ LogCallbackSendMessageToQueue(UINT32  OperationCode,
                               UINT32  BufferLen,
                               BOOLEAN Priority);
 
+inline
 BOOLEAN
 LogCallbackCheckIfBufferIsFull(BOOLEAN Priority);
 
+inline
 BOOLEAN
 LogCallbackSendBuffer(_In_ UINT32                          OperationCode,
                       _In_reads_bytes_(BufferLength) PVOID Buffer,

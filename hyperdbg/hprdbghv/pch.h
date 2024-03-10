@@ -33,7 +33,9 @@
 //
 #define SCRIPT_ENGINE_KERNEL_MODE
 #define HYPERDBG_KERNEL_MODE
-#define HYPERDBG_VMM
+//#define HYPERDBG_VMM
+//#define ZYDIS_STATIC_BUILD
+//#define ZYCORE_STATIC_BUILD
 
 //
 // Definition of Intel primitives (External header)

@@ -118,7 +118,7 @@ copy "$(OutDir)hprdbghv.dll" "$(OutDir)SDK\Libraries\hprdbghv.dll"</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)build\bin\$(Configuration)\HPRDBGCTRL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)build\bin\$(Configuration)\HPRDBGCTRL.lib;$(SolutionDir)build\bin\$(Configuration)\script-engine.lib;$(SolutionDir)build\bin\$(Configuration)\symbol-parser.lib;$(SolutionDir)build\bin\$(Configuration)\pdbex.lib;$(SolutionDir)libraries\zydis\user\Zydis.lib;$(SolutionDir)libraries\zydis\user\Zycore.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
     <PostBuildEvent>

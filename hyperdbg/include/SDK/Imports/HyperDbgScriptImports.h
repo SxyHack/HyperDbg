@@ -30,7 +30,7 @@ __declspec(dllimport) VOID
     ScriptEngineSetTextMessageCallback(PVOID Handler);
 __declspec(dllimport) VOID
     ScriptEngineSymbolAbortLoading();
-__declspec(dllimport) UINT64
+/*__declspec(dllimport)*/ UINT64
     ScriptEngineConvertNameToAddress(const char * FunctionOrVariableName, PBOOLEAN WasFound);
 __declspec(dllimport) UINT32
     ScriptEngineLoadFileSymbol(UINT64 BaseAddress, const char * PdbFileName, const char * CustomModuleName);

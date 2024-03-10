@@ -10,11 +10,12 @@
  */
 #pragma once
 
-#ifdef HYPERDBG_VMM
-#    define IMPORT_EXPORT_VMM __declspec(dllexport)
-#else
-#    define IMPORT_EXPORT_VMM __declspec(dllimport)
-#endif
+//#ifdef HYPERDBG_VMM
+//#    define IMPORT_EXPORT_VMM __declspec(dllexport)
+//#else
+//#    define IMPORT_EXPORT_VMM __declspec(dllimport)
+//#endif
+#define IMPORT_EXPORT_VMM
 
 //////////////////////////////////////////////////
 //                 VM Functions 	    		//
