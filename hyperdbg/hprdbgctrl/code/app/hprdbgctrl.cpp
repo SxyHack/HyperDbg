@@ -19,7 +19,7 @@ using namespace std;
 extern HANDLE     g_DeviceHandle;
 extern HANDLE     g_IsDriverLoadedSuccessfully;
 extern BOOLEAN    g_IsVmxOffProcessStart;
-extern Callback   g_MessageHandler;
+static Callback   g_MessageHandler;
 extern TCHAR      g_DriverLocation[MAX_PATH];
 extern LIST_ENTRY g_EventTrace;
 extern BOOLEAN    g_LogOpened;
