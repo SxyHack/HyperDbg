@@ -11,9 +11,9 @@
 #pragma once
 
 #ifdef HYPERDBG_VMM
-#    define IMPORT_EXPORT_VMM __declspec(dllexport)
+#    define IMPORT_EXPORT_VMM //__declspec(dllexport)
 #else
-#    define IMPORT_EXPORT_VMM __declspec(dllimport)
+#    define IMPORT_EXPORT_VMM //__declspec(dllimport)
 #endif
 
 //////////////////////////////////////////////////

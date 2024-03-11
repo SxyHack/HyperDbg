@@ -435,7 +435,7 @@ TCHAR g_TestLocation[MAX_PATH] = {0};
  * messages
  *
  */
-Callback g_MessageHandler = 0;
+//__declspec(selectany) Callback g_MessageHandler = 0;
 
 /**
  * @brief Shows whether the vmxoff process start or not

@@ -118,7 +118,7 @@ copy "$(OutDir)hprdbghv.dll" "$(OutDir)SDK\Libraries\hprdbghv.dll"</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)build\bin\$(Configuration)\HPRDBGCTRL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)build\bin\$(Configuration)\HPRDBGCTRL.lib;$(SolutionDir)build\bin\$(Configuration)\script-engine.lib;$(SolutionDir)build\bin\$(Configuration)\symbol-parser.lib;$(SolutionDir)build\bin\$(Configuration)\pdbex.lib;$(SolutionDir)libraries\zydis\user\Zydis.lib;$(SolutionDir)libraries\zydis\user\Zycore.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
     <PostBuildEvent>
@@ -133,14 +133,7 @@ copy "$(OutDir)script-engine.lib" "$(OutDir)SDK\Libraries\script-engine.lib"
 copy "$(OutDir)symbol-parser.lib" "$(OutDir)SDK\Libraries\symbol-parser.lib"
 copy "$(OutDir)hyperlog.lib" "$(OutDir)SDK\Libraries\hyperlog.lib"
 copy "$(OutDir)hprdbghv.lib" "$(OutDir)SDK\Libraries\hprdbghv.lib"
-copy "$(OutDir)HPRDBGCTRL.dll" "$(OutDir)SDK\Libraries\HPRDBGCTRL.dll"
-copy "$(OutDir)HPRDBGCTRL.dll" "$(OutDir)SDK\Libraries\hprdbgrev.dll"
-copy "$(OutDir)pdbex.dll" "$(OutDir)SDK\Libraries\pdbex.dll"
-copy "$(OutDir)kdserial.dll" "$(OutDir)SDK\Libraries\kdserial.dll"
-copy "$(OutDir)script-engine.dll" "$(OutDir)SDK\Libraries\script-engine.dll"
-copy "$(OutDir)symbol-parser.dll" "$(OutDir)SDK\Libraries\symbol-parser.dll"
-copy "$(OutDir)hyperlog.dll" "$(OutDir)SDK\Libraries\hyperlog.dll"
-copy "$(OutDir)hprdbghv.dll" "$(OutDir)SDK\Libraries\hprdbghv.dll"</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

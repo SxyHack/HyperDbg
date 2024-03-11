@@ -310,7 +310,7 @@ CommonIsStringStartsWith(const char * pre, const char * str);
 BOOLEAN
 CommonIsGuestOnUsermode32Bit();
 
-PCHAR
+inline PCHAR
 CommonGetProcessNameFromProcessControlBlock(PEPROCESS eprocess);
 
 VOID

@@ -15,7 +15,7 @@
 //				    Functions					//
 //////////////////////////////////////////////////
 
-NTSTATUS
+inline NTSTATUS
 DpcRoutineRunTaskOnSingleCore(UINT32 CoreNumber, PVOID Routine, PVOID DeferredContext);
 
 VOID

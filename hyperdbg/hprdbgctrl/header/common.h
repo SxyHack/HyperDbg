@@ -106,7 +106,7 @@ Replace(std::string & str, const std::string & from, const std::string & to);
 VOID
 ReplaceAll(string & str, const string & from, const string & to);
 
-const vector<string>
+inline const vector<string>
 Split(const string & s, const char & c);
 
 BOOLEAN
